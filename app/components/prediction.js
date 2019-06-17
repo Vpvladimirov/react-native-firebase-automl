@@ -4,7 +4,7 @@ import FirebaseML from '@firebaseML'
 export default class Prediction extends React.Component {
     getPrediction(pictureUri) {
         return new Promise((resolve, reject) => {
-            FirebaseML.show(
+            FirebaseML.predict(
             pictureUri,
             error => {
                 console.log(error);

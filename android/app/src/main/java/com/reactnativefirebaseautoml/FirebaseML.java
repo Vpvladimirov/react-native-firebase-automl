@@ -33,7 +33,7 @@ import android.support.annotation.NonNull;
 
 public class FirebaseML extends ReactContextBaseJavaModule {
 
-    private static final String remoteModelName = "fitness_appliances_2019515153632";
+    private static final String remoteModelName = "YOUR_REMOTE_MODEL_NAME_HERE";
 
     public FirebaseML(ReactApplicationContext reactContext) {
       super(reactContext);
@@ -57,7 +57,7 @@ public class FirebaseML extends ReactContextBaseJavaModule {
     }
 
     @ReactMethod
-    public void show(
+    public void predict(
       String filePath,
       Callback errorCallback,
       Callback successCallback) {
